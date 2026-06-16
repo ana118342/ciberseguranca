@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (fonteSalva === "grande") {
     document.documentElement.classList.add("aumentarTexto");
-  } 
+  }
   else if (fonteSalva === "pequena") {
     document.documentElement.classList.add("diminuirTexto");
-  } 
+  }
   else {
     document.documentElement.classList.add("textoNormal");
   }

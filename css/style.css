@@ -140,7 +140,6 @@ aside hr {
     cursor: pointer;
     transition: 0.2s ease;
 
-    /* ✅ CORREÇÃO */
     pointer-events: auto;
 }
 
@@ -153,7 +152,6 @@ aside hr {
 .mainIndex {
     margin-left: 280px;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,18 +196,18 @@ aside hr {
     border: #000 solid 3px;
     border-radius: 35px;
 
-    /* ✅ tamanho fixo MENOR */
+    /* tamanho fixo MENOR */
     width: 150px;
     height: 60px;
 
-    /* ✅ centralização */
+    /* centralização */
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-align: center;
 
-    /* ✅ controle do texto */
+    /* controle do texto */
     font-size: 0.95rem;
     line-height: 1.2;
     padding: 8px;
@@ -226,16 +224,10 @@ aside hr {
 }
 
 .referencia {
-    position: fixed;
-    bottom: 0;
-    left: 280px;
-    width: calc(100% - 280px);
     text-align: center;
-    padding: 8px 10px 10px 10px;
     font-size: 12px;
     color: var(--footer-text);
     background: transparent;
-    z-index: 1;
 }
 
 /* NAVBAR SUPERIOR */
@@ -318,7 +310,6 @@ aside hr {
     cursor: pointer;
     transition: 0.2s ease;
 
-    /* ✅ CORREÇÃO */
     pointer-events: auto;
 }
 
@@ -335,10 +326,6 @@ aside hr {
 }
 
 /* SOBRE */
-.sobrePage {
-    overflow: hidden;
-}
-
 .sobreMain {
     width: 100%;
     padding: 100px 40px 60px 40px;
@@ -422,14 +409,14 @@ aside hr {
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     padding: 8px;
     font-size: 12px;
     color: #777;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
 }
 
 /* SENHAS */
@@ -518,7 +505,7 @@ form {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 26px;
+    /* margin-top: 100px; */
 }
 
 .botoesForm button {
@@ -590,7 +577,7 @@ html.darkmode .password {
   border: 2px solid #555;      /* borda visível */
 }
 
-/* === CORRIGIR MENU INFERIOR NO DARK MODE === */
+/* === MENU INFERIOR NO DARK MODE === */
 html.darkmode .funcoes {
   background-color: #1f1f1f;
 }
